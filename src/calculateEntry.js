@@ -20,7 +20,6 @@ function calculateEntry(entrants) {
   if (!entrants || Object.keys(entrants).length === 0) {
     return 0;
   }
-  
   const priceChild = countEntrants(entrants).child * data.prices.child;
   const priceAdult = countEntrants(entrants).adult * data.prices.adult;
   const priceSenior = countEntrants(entrants).senior * data.prices.senior;
